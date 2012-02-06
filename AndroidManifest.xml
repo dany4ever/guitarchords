@@ -7,12 +7,17 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".GuitarChordsActivity"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:name="LearnActivity" android:screenOrientation="portrait" android:launchMode="singleInstance"></activity>
+        <activity android:name="ListenActivity" android:screenOrientation="portrait" android:launchMode="singleInstance"></activity>
+        <activity android:name="ChordListActivity" android:screenOrientation="portrait" android:launchMode="singleInstance"></activity>
+        <activity android:name="DiagramActivity" android:screenOrientation="portrait"></activity>
 
     </application>
 </manifest>
